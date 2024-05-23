@@ -1,4 +1,6 @@
 .idx
 .env
 .venv
+.vscode
+src/__pycache__
 /home/user/teste/main.ipynb
