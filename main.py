@@ -1,9 +1,16 @@
+import PIL.Image
+import google.generativeai as genai
+import os
+from dotenv import load_dotenv, find_dotenv
+
+dotenv_path = find_dotenv()
+
+API_KEY = os.getenv('API_KEY')
+
 prompt = 'Me diga a receita de um mousse de chocolate'
 
-import PIL.Image
 img = PIL.Image.open('baked_goods_2.jpg')
 
-import google.generativeai as genai
 from IPython.display import Markdown, clear_output, display
 
 genai.configure(api_key=API_KEY)
